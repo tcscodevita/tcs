@@ -133,7 +133,7 @@ font-family:monospace;
         <img class="card-img-top" src="https://media.istockphoto.com/photos/medical-technology-concept-remote-medicine-electronic-medical-record-picture-id1204743045?k=20&m=1204743045&s=612x612&w=0&h=gkvGEz4xpLokCjZuSF55ch7q2v2iowNITlfZR9Ggu_g=" alt="Card image cap" width="400px" height="380px">
         <div class="card-body">
         <h5 class="card-title"><h1>Health Portal</h1></h5>
-        <p class="card-text">Health Data In your Finger Tips -sieT
+        <p class="card-text">Health Data In your Finger Tips - SIET
         </p>
         <!--<a href="login" class="btn btn-primary">Login</a>
         <a href="signup" class="btn btn-primary">SignUp</a>-->

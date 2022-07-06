@@ -29,7 +29,7 @@
       <h5 class="card-title"><h1>User Login</h1></h5>
       <p class="card-text">Access Your Medical Reports And Health Data 
       </p>
-      <a href="userlogin.html" class="btn btn-primary">Login</a>
+      <a href="userlogin.html" class="btn btn-primary">Signin</a>
       <a href="usersignup.html" class="btn btn-primary">Register</a>
       </div>
       </div>

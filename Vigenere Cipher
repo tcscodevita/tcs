@@ -1,0 +1,60 @@
+vigenereCipher.java
+public class vigenereCipher {
+static String encode(String text, final String key) {
+String res = "";
+text = text.toUpperCase();
+for (int i = 0, j = 0; i < text.length(); i++) {
+char c = text.charAt(i);
+if (c < 'A' || c > 'Z') {
+continue;
+}
+res += (char) ((c + key.charAt(j) - 2 * 'A') % 26 + 'A');
+j = ++j % key.length();
+}
+return res;
+}
+static String decode(String text, final String key) {
+String res = "";
+text = text.toUpperCase();
+for (int i = 0, j = 0; i < text.length(); i++) {
+char c = text.charAt(i);
+if (c < 'A' || c > 'Z') {
+continue;
+}
+res += (char) ((c - key.charAt(j) + 26) % 26 + 'A');
+j = ++j % key.length();
+}
+return res;
+}
+public static void main(String[] args) throws java.lang.Exception {
+String key = "VIGENERECIPHER";
+String msg = "SecurityLaboratory";
+System.out.println("Simulating Vigenere Cipher\n------------------------ ");
+System.out.println("Input Message : " + msg);
+String enc = encode(msg, key);
+System.out.println("Encrypted Message : " + enc);
+System.out.println("Decrypted Message : " + decode(enc, key));
+}
+}
+
+
+OUTPUT:
+Simulating Vigenere Cipher
+Input Message : SecurityLaboratory
+Encrypted Message : NMIYEMKCNIQVVROWXC
+Decrypted Message : SECURITYLABORATORY
+
+
+ALGORITHM:
+1. The Vigenere cipher is a method of encrypting alphabetic text by using a
+series of different Caesar ciphers based on the letters of a keyword.
+2. It is a simple form of polyalphabetic substitution.
+3. To encrypt, a table of alphabets can be used, termed a Vigenere square, or
+Vigenere table.
+4. It consists of the alphabet written out 26 times in different rows, each
+alphabet shifted cyclically to the left compared to the previous alphabet,
+corresponding to the 26 possible Caesar ciphers.
+5. At different points in the encryption process, the cipher uses a different
+alphabet from one of the rows used.
+6. The alphabet at each point depends on a repeating keyword.
+  
